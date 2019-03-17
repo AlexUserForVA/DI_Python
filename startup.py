@@ -1,6 +1,6 @@
 from predictorprovider.MockPredictorProvider import MockPredictorProvider
 from spectrogramprovider.MockSpectrogramProvider import MockSpectrogramProvider
-from gui.kivyApp import KivyApp
+from guiprovider.kivyApp import KivyApp
 
 '''
 class Client(object):

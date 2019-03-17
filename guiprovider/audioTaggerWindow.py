@@ -11,4 +11,4 @@ class AudioTaggerWindow(FloatLayout):
     control_column = window_width * 0.33
 
 class SpectrogramPanel(BoxLayout):
-    image_path = 'gui/images/mercedes.png'
+    image_path = 'guiprovider/images/mercedes.png'

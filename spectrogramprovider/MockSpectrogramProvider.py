@@ -1,8 +1,7 @@
+import io
 import glob
 
 from spectrogramprovider_interfaces.ISpectrogramProvider import ISpectrogramProvider
-
-from PIL import Image
 
 class MockSpectrogramProvider(ISpectrogramProvider):
 
@@ -17,9 +16,9 @@ class MockSpectrogramProvider(ISpectrogramProvider):
         return len(self.spectrogramQueue) == 0
 
     def fillQueue(self):
-        data_paths = glob.glob('mock_data/*.jpg')
+        data_paths = glob.glob('spectrogramprovider/mock_data/*.jpg')
         for elem in data_paths:
-            img = Image.open(elem)
-            self.spectrogramQueue.append(img)
+            data = io.BytesIO(open(elem, 'rb').read())
+            self.spectrogramQueue.append(data)
 
 

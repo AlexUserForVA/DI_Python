@@ -1,3 +1,5 @@
 class IGuiProvider(object):
 
-    def startGui(self): raise NotImplementedError
+    def getCurrentSpectrogram(self): raise NotImplementedError
+
+    def getCurrentPrediction(self, dt): raise NotImplementedError
