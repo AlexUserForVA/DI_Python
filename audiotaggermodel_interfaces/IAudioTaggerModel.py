@@ -1,4 +1,4 @@
-class IGuiProvider(object):
+class IAudioTaggerModel(object):
 
     def getCurrentSpectrogram(self): raise NotImplementedError
 

@@ -1,48 +1,100 @@
 #:kivy 1.0
 
 <AudioTaggerWindow>:
-    label_wid: my_custom_label2
     info: 'very cool'
 
     GridLayout:
         cols: 2
         padding: 10
 
-        SpectrogramPanel:
-
-        GridLayout:
-            cols: 2
-            Label:
-                id: grid1label1
-                text: 'Spectrogram Type:'
-            Label:
-                id: grid1label1
-                text: 'Spectrogram Type:'
-
-        Button:
-            id: my_custom_label2
-            size_hint_x: None
-            width: root.output_column
-            text: 'My controller info is: '
-
-        Button:
-            id: my_custom_label3
-            text: 'My controller info is: '
-
-<SpectrogramPanel>
-    BoxLayout:
-        orientation: "vertical"
-        canvas:
-            Rectangle:
-                pos: self.pos
-                size: self.size
         Image:
-            texture: app.img_texture
-        Label:
-            size_hint: 1,0.3
-            text: 'Bka'
-            color: [0,0,0,1]
-        Label:
-            size_hint: 1,0.3
-            text: "NYC, New York, USA"
-            color: [0,0,0,1]
+            id: spec1
+            texture: None
+
+        BoxLayout:
+            orientation: "vertical"
+            Button:
+                id: but_1
+                font_size: 20
+                text: 'Start Spectrograms'
+                on_press: root.startButtonEvent()
+            GridLayout:
+                cols: 2
+                row_force_default: True
+                row_default_height: 40
+                spacing: 10, 10
+                Label:
+                    id: grid1label1
+                    text: 'TestSlider'
+                Slider:
+                    value: 5
+                    range: (0,20)
+                    step: 0.1
+                Label:
+                    id: grid1label1
+                    text: 'TestToggle'
+                GridLayout:
+                    cols: 2
+                    ToggleButton:
+                        text: 'on'
+                        group: 'group1'
+                    ToggleButton:
+                        text: 'off'
+                        group: 'group1'
+                Label:
+                    id: grid1label1
+                    text: 'TestTextInput'
+                TextInput:
+                    disabled: True
+                Button:
+                    id: but_2
+                    font_size: 20
+                    text: 'Start Spectrograms 2'
+        GridLayout:
+            cols: 1
+            Label:
+                text: app.class_labels[0]
+            Widget:
+                canvas:
+                    Color:
+                        rgba: 0, 1, 1, .9
+                    RoundedRectangle:
+                        pos: self.x, self.y
+                        size: app.rectangle_width[0], 10
+            Label:
+                text: app.class_labels[1]
+            Widget:
+                canvas:
+                    Color:
+                        rgba: 0, 1, 1, .9
+                    RoundedRectangle:
+                        pos: self.x, self.y
+                        size: app.rectangle_width[1], 10
+            Label:
+                text: app.class_labels[2]
+            Widget:
+                canvas:
+                    Color:
+                        rgba: 0, 1, 1, .9
+                    RoundedRectangle:
+                        pos: self.x, self.y
+                        size: app.rectangle_width[2], 10
+            Label:
+                text: app.class_labels[3]
+            Widget:
+                canvas:
+                    Color:
+                        rgba: 0, 1, 1, .9
+                    RoundedRectangle:
+                        pos: self.x, self.y
+                        size: app.rectangle_width[3], 10
+            Label:
+                text: app.class_labels[4]
+            Widget:
+                canvas:
+                    Color:
+                        rgba: 0, 1, 1, .9
+                    RoundedRectangle:
+                        pos: self.x, self.y
+                        size: app.rectangle_width[4], 10
+

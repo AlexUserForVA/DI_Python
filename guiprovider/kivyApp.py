@@ -1,44 +1,87 @@
 import kivy
 kivy.require('1.0.6') # replace with your current kivy version !
 
+from array import array
+import numpy as np
+import json
+import io
+import threading
+
 from kivy.app import App
-
-from kivy.clock import Clock
-from kivy.properties import ObjectProperty
+from kivy.lang import Builder
+from kivy.clock import Clock, mainthread
+from kivy.properties import ObjectProperty, ListProperty, NumericProperty
 from kivy.core.image import Image
+from kivy.graphics.texture import Texture
+from kivy.core.window import Window
+from kivy.uix.floatlayout import FloatLayout
+from utils.utils import getScreenResolution
+from kivy.core.window import Window
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.widget import Widget
 
-from guiprovider.audioTaggerWindow import AudioTaggerWindow
-
-from guiprovider_interfaces.IGuiProvider import IGuiProvider
+# from audiotaggerwindow import AudioTaggerWindow
 from predictorprovider_interfaces.IPredictorProvider import IPredictorProvider
 from spectrogramprovider_interfaces.ISpectrogramProvider import ISpectrogramProvider
+from spectrogramprovider.SpectrogramProvider import SpectrogramProvider
+from utils.utils import getScreenResolution
+
+class AudioTaggerWindow(FloatLayout):
 
 
-class KivyApp(App, IGuiProvider):
+    def startButtonEvent(self, **kwargs):
+        threading.Thread(target=self.startSpecCalc()).start()
 
-    kv_directory = 'guiprovider/kv'
+    def startSpecCalc(self):
+        sp = SpectrogramProvider()
+        sp.subscribe(App.get_running_app())
+        sp.run()
 
-    img_texture = ObjectProperty(None)
+    @mainthread
+    def updateSpectrogram(self, spectrogram):
+        pass
+        # texture = Texture.create(size=(256, 512))
+        # arr = array('B', spectrogram)
+        # texture.blit_buffer(arr, colorfmt='rgb', bufferfmt='ubyte')
+        # self.img_texture = texture
 
-    def __init__(self, spectrogramProvider, predictorProvider, **kwargs):
+class KivyApp(App):
+
+    kv_directory = 'kv'
+
+    # img_texture = ObjectProperty(None)
+    rectangle_width = ListProperty([20, 100, 100, 100, 100])
+    class_labels = ListProperty(['-', '-', '-', '-', '-'])
+
+    screen_width, screen_heigth = getScreenResolution()
+    window_width, window_heigth = screen_width / 1.5, screen_heigth / 1.5
+    Window.size = (window_width, window_heigth)
+    output_column = window_width / 2
+    control_column = window_width / 2
+
+    def __init__(self, **kwargs):
         super(KivyApp, self).__init__(**kwargs)
 
-        # type saftey
-        if not isinstance(spectrogramProvider, ISpectrogramProvider):
-            raise TypeError('spectrogramProvider must be an implementation of IPredictorProvider')
-        if not isinstance(predictorProvider, IPredictorProvider):
-            raise TypeError('predictorProvider must be an implementation of IPredictorProvider')
-
-        self.spectrogramProvider = spectrogramProvider
-        self.predictorProvider = predictorProvider
-
-        Clock.schedule_interval(self.getCurrentSpectrogram, 2)
-
     def build(self):
-        return AudioTaggerWindow()
+        self.window = AudioTaggerWindow()
+        return self.window
 
+    '''
     def getCurrentSpectrogram(self, dt):
-        binaryImg = self.spectrogramProvider.getCurrentSpectrogramImage()
-        self.img_texture = Image(binaryImg, ext='jpg').texture
+        # binaryImg = self.spectrogramProvider.getCurrentSpectrogramImage()
+        data = io.BytesIO(open('spectrogramprovider/mock_data/mercedes.png', 'rb').read())
+        self.img_texture = Image(data, ext='png').texture
 
+    def getCurrentPrediction(self, dt):
+        output_probabilities_json = self.predictorProvider.predict(2)
+        prob_dict = json.loads(output_probabilities_json)
+        sorted_values = np.argsort(prob_dict.values())
+        for i in range(5):
+            self.class_labels[i] = prob_dict.keys()[sorted_values[40 - i]]
+            self.rectangle_width[i] = prob_dict.values()[sorted_values[40 - i]] * self.output_column
+    '''
 
+    def spectrogramHasChanged(self, spectrogram):
+         self.window.updateSpectrogram(spectrogram)
+if __name__ == '__main__':
+    KivyApp().run()

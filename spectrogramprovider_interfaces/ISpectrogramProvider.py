@@ -27,3 +27,31 @@ class ISpectrogramProvider(object):
             queue is empty (true) or not (false)
         """
         raise NotImplementedError
+
+    def start(self):
+        """
+        Check if the spectrogram queue is empty.
+
+        Parameters
+        ----------
+
+        Returns
+        -------
+        Boolean
+            queue is empty (true) or not (false)
+        """
+        raise NotImplementedError
+
+    def setObserver(self, observer):
+        """
+        Check if the spectrogram queue is empty.
+
+        Parameters
+        ----------
+
+        Returns
+        -------
+        Boolean
+            queue is empty (true) or not (false)
+        """
+        raise NotImplementedError

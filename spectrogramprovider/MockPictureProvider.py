@@ -1,9 +1,10 @@
 import io
+import re
 import glob
 
 from spectrogramprovider_interfaces.ISpectrogramProvider import ISpectrogramProvider
 
-class MockSpectrogramProvider(ISpectrogramProvider):
+class MockPictureProvider(ISpectrogramProvider):
 
     def __init__(self):
         self.spectrogramQueue = []
@@ -20,5 +21,3 @@ class MockSpectrogramProvider(ISpectrogramProvider):
         for elem in data_paths:
             data = io.BytesIO(open(elem, 'rb').read())
             self.spectrogramQueue.append(data)
-
-
