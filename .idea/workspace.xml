@@ -2,19 +2,134 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9015c207-3912-40b0-9892-7d06d89d8353" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/guiprovider/audiotaggerwindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DI_Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DI_Python.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/startup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guiprovider/audioTaggerWindow.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guiprovider/images/mercedes.png" beforeDir="false" afterPath="$PROJECT_DIR$/spectrogramprovider/mock_data/mercedes.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guiprovider/kivyApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/guiprovider/kivyApp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guiprovider/kv/kivy.kv" beforeDir="false" afterPath="$PROJECT_DIR$/guiprovider/kv/kivy.kv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guiprovider_interfaces/IGuiProvider.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guiprovider_interfaces/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictorprovider/MockPredictorProvider.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictorprovider/MockPredictorProvider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/MockSpectrogramProvider.py" beforeDir="false" afterPath="$PROJECT_DIR$/spectrogramprovider/MockPictureProvider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider_interfaces/ISpectrogramProvider.py" beforeDir="false" afterPath="$PROJECT_DIR$/spectrogramprovider_interfaces/ISpectrogramProvider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup.py" beforeDir="false" afterPath="$PROJECT_DIR$/startup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audiotaggermodel/AudioTaggerModel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audiotaggermodel/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audiotaggermodel_interfaces/IAudioTaggerModel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audiotaggermodel_interfaces/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guiprovider/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guiprovider/audiotaggerwindow.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guiprovider/kivyApp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guiprovider/kv/kivy.kv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guiprovider/kv/main.kv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guiprovider/kv/main_copy.kv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guiprovider/mainApp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictorprovider/MockPredictorProvider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictorprovider/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictorprovider_interfaces/IPredictorProvider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictorprovider_interfaces/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/MockPictureProvider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/SpectrogramProvider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/mercedes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm1489630976_1914-7-31_1962.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm1506408192_1914-7-31_1962.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm1539962624_1914-7-31_1962.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm1556739840_1914-7-31_1962.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm1573517056_1914-7-31_1962.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm1590294272_1914-7-31_1962.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm1674245888_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm1691023104_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm1707800320_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm1724577536_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm1741354752_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm298514176_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm315291392_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3235444480_1914-7-31_1968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3252221696_1914-7-31_1968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3268998912_1914-7-31_1968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3285776128_1914-7-31_1968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3302553344_1914-7-31_1968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3319330560_1914-7-31_1968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3336107776_1914-7-31_1968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3352884992_1914-7-31_1968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3369662208_1914-7-31_1968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3386439424_1914-7-31_1968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3419993856_1914-7-31_1968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3436771072_1914-7-31_1968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3453548288_1914-7-31_1968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3470325504_1914-7-31_1968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3537434368_1914-7-31_1968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3554211584_1914-7-31_1968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3570988800_1914-7-31_1968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3587766016_1914-7-31_1968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3604543232_1914-7-31_1968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3621320448_1914-7-31_1968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3772315392_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3789092608_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3805869824_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3822647040_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3839424256_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3906533120_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3923310336_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3940087552_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3956864768_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3973641984_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm4007196416_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm4023973632_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm4141414144_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm4158191360_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm415954688_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm4174968576_1914-7-31_1968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm4191745792_1914-7-31_1968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm4208523008_1914-7-31_1968.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm449509120_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm466286336_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm483063552_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm499840768_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm516617984_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm533395200_1914-7-31_1964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm103389184_1955-1-6_2005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm113481984_1955-1-6_2003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm120166400_1955-1-6_2005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm12818688_1955-1-6_2003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm129154048_1955-1-6_2011.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm130259200_1955-1-6_2003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm147036416_1955-1-6_2003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm197368064_1955-1-6_2003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm230922496_1955-1-6_2003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm264476928_1955-1-6_2003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm331585792_1955-1-6_2003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm341607680_1955-1-6_1994.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm46373120_1955-1-6_2003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm566466816_1955-1-6_2003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm616798464_1955-1-6_2003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm633575680_1955-1-6_2003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm650352896_1955-1-6_2003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm683907328_1955-1-6_2003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm717461760_1955-1-6_2003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm734238976_1955-1-6_2003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm751016192_1955-1-6_2003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm784570624_1955-1-6_2003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm79927552_1955-1-6_2003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm96704768_1955-1-6_2003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm1100799232_1946-1-20_1990.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm1177734144_1946-1-20_1997.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm1313970688_1946-1-20_2001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm1330747904_1946-1-20_2001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm1448188416_1946-1-20_2001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm1906105600_1946-1-20_1990.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm1989991680_1946-1-20_1990.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm2033372160_1946-1-20_1997.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm2101517056_1946-1-20_2007.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm2118294272_1946-1-20_2007.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm2656610304_1946-1-20_2012.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm2687146752_1946-1-20_2006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm2703923968_1946-1-20_2006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm2922027776_1946-1-20_2006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm2938804992_1946-1-20_2006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm3222575872_1946-1-20_2001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm909940736_1946-1-20_2001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm958372352_1946-1-20_2006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm991926784_1946-1-20_2006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider/prepare_spectrograms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider_interfaces/ISpectrogramProvider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrogramprovider_interfaces/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/startup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/threadedApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/threadedApp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/threading_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/threading_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +141,7 @@
     <SUITE FILE_PATH="coverage/DI_Python$kivyGUI.coverage" NAME="kivyGUI Coverage Results" MODIFIED="1552679377109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DI_Python$main.coverage" NAME="main Coverage Results" MODIFIED="1553121365611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DI_Python$audioTaggerThreaded.coverage" NAME="audioTaggerThreaded Coverage Results" MODIFIED="1553172285505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DI_Python$mainApp.coverage" NAME="mainApp Coverage Results" MODIFIED="1553326345520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/guiprovider" />
     <SUITE FILE_PATH="coverage/DI_Python$AudioTagger.coverage" NAME="AudioTagger Coverage Results" MODIFIED="1553109154229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/audiotaggermodel" />
     <SUITE FILE_PATH="coverage/DI_Python$Host.coverage" NAME="Host Coverage Results" MODIFIED="1553281180497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DI_Python$kivyApp.coverage" NAME="kivyApp Coverage Results" MODIFIED="1553281189906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/guiprovider" />
@@ -36,96 +152,36 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/guiprovider/kivyApp.py">
+        <entry file="file://$PROJECT_DIR$/viewer/mainApp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spectrogramprovider/MockPictureProvider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="54" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="54" />
+            <state relative-caret-position="576">
+              <caret line="71" column="74" selection-start-line="71" selection-start-column="74" selection-end-line="71" selection-end-column="74" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startup.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#73#0" expanded="true" />
+                <element signature="e#0#16#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/guiprovider/mainApp.py">
+        <entry file="file://$PROJECT_DIR$/startup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="71" lean-forward="true" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
+            <state relative-caret-position="75">
+              <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
               <folding>
-                <element signature="e#0#16#0" expanded="true" />
+                <element signature="e#0#51#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/guiprovider/kv/main.kv">
+        <entry file="file://$PROJECT_DIR$/model/audiotaggermodel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/guiprovider/kv/main_copy.kv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spectrogramprovider/SpectrogramProvider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="48" column="41" lean-forward="true" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+            <state relative-caret-position="141">
+              <caret line="41" selection-start-line="41" selection-end-line="42" selection-end-column="74" />
               <folding>
                 <element signature="e#1#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/guiprovider/kv/kivy.kv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1485">
-              <caret line="99" lean-forward="true" selection-start-line="2" selection-end-line="99" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/threadedApp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2430">
-              <caret line="180" column="23" selection-start-line="180" selection-start-column="23" selection-end-line="180" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -178,16 +234,20 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/model/SpectrogramProvider.py" />
         <option value="$PROJECT_DIR$/threading_test.py" />
-        <option value="$PROJECT_DIR$/startup.py" />
         <option value="$PROJECT_DIR$/audioTaggerThreaded.py" />
         <option value="$PROJECT_DIR$/threadedApp.py" />
         <option value="$PROJECT_DIR$/guiprovider/kv/threaded.kv" />
         <option value="$PROJECT_DIR$/guiprovider/audiotaggerwindow.py" />
         <option value="$PROJECT_DIR$/guiprovider/kv/kivy.kv" />
         <option value="$PROJECT_DIR$/guiprovider/kivyApp.py" />
+        <option value="$PROJECT_DIR$/viewer/IViewer.py" />
+        <option value="$PROJECT_DIR$/spectrogramprovider/SpectrogramProvider.py" />
+        <option value="$PROJECT_DIR$/model/IModel.py" />
+        <option value="$PROJECT_DIR$/model/audiotaggermodel.py" />
         <option value="$PROJECT_DIR$/guiprovider/mainApp.py" />
         <option value="$PROJECT_DIR$/guiprovider/kv/main.kv" />
-        <option value="$PROJECT_DIR$/spectrogramprovider/SpectrogramProvider.py" />
+        <option value="$PROJECT_DIR$/viewer/mainApp.py" />
+        <option value="$PROJECT_DIR$/startup.py" />
       </list>
     </option>
   </component>
@@ -202,6 +262,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,19 +273,17 @@
             <path>
               <item name="DI_Python" type="b2602c69:ProjectViewProjectNode" />
               <item name="DI_Python" type="462c0819:PsiDirectoryNode" />
-              <item name="guiprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DI_Python" type="b2602c69:ProjectViewProjectNode" />
               <item name="DI_Python" type="462c0819:PsiDirectoryNode" />
-              <item name="guiprovider" type="462c0819:PsiDirectoryNode" />
-              <item name="kv" type="462c0819:PsiDirectoryNode" />
+              <item name="viewer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -235,17 +294,18 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/viewer" />
+      <recent name="$PROJECT_DIR$/model" />
+      <recent name="$PROJECT_DIR$/guiprovider/kv" />
+      <recent name="$PROJECT_DIR$/spectrogramprovider" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/archive" />
       <recent name="$PROJECT_DIR$/spectrogramprovider/mock_data" />
       <recent name="$PROJECT_DIR$/gui/images" />
       <recent name="$PROJECT_DIR$/spectrogramdata_interfaces" />
       <recent name="$PROJECT_DIR$/gui_interfaces" />
-      <recent name="$PROJECT_DIR$/predictor_interfaces" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/guiprovider/kv" />
-      <recent name="$PROJECT_DIR$/model" />
-      <recent name="$PROJECT_DIR$/spectrogramprovider" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -260,7 +320,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mainApp">
+  <component name="RunManager" selected="Python.startup">
     <configuration name="AudioTagger" type="PythonConfigurationType" factoryName="Python">
       <module name="DI_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -296,7 +356,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/startup.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/archive/startup.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="true" />
@@ -349,28 +409,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="audioTaggerThreaded" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="DI_Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/threadedApp.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="kivyApp" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DI_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -415,6 +453,25 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="mainApp (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DI_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/viewer" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/viewer/mainApp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="mainApp" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DI_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -434,20 +491,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="threading_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="startup" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DI_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/threading_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/startup.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -460,19 +514,19 @@
       <item itemvalue="Python.Host" />
       <item itemvalue="Python.AudioTagger" />
       <item itemvalue="Python.kivyGUI" />
-      <item itemvalue="Python.threading_test" />
-      <item itemvalue="Python.audioTaggerThreaded" />
       <item itemvalue="Python.kivyApp" />
       <item itemvalue="Python.SpectrogramProvider" />
       <item itemvalue="Python.mainApp" />
+      <item itemvalue="Python.mainApp (1)" />
+      <item itemvalue="Python.startup" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.startup" />
+        <item itemvalue="Python.mainApp (1)" />
         <item itemvalue="Python.mainApp" />
         <item itemvalue="Python.SpectrogramProvider" />
         <item itemvalue="Python.kivyApp" />
-        <item itemvalue="Python.audioTaggerThreaded" />
-        <item itemvalue="Python.threading_test" />
       </list>
     </recent_temporary>
   </component>
@@ -503,17 +557,18 @@
       <workItem from="1553244610377" duration="8188000" />
       <workItem from="1553278976881" duration="4205000" />
       <workItem from="1553285474951" duration="1720000" />
+      <workItem from="1553326143253" duration="6186000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86774000" />
+    <option name="totallyTimeSpent" value="92960000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18629077" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18850194" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -568,12 +623,12 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/threadedApp.py</url>
-          <line>120</line>
+          <url>file://$PROJECT_DIR$/archive/threadedApp.py</url>
+          <line>115</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/guiprovider/kivyApp.py</url>
+          <url>file://$PROJECT_DIR$/archive/guiprovider/kivyApp.py</url>
           <line>32</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
@@ -607,43 +662,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/guiprovider_interfaces/IGuiProvider.py" />
-    <entry file="file://$PROJECT_DIR$/predictorprovider_interfaces/IPredictorProvider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/audiotaggermodel_interfaces/IAudioTaggerModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="60" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spectrogramprovider_interfaces/ISpectrogramProvider.py">
+    <entry file="file://$PROJECT_DIR$/archive/spectrogramprovider_interfaces/ISpectrogramProvider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spectrogramprovider/prepare_spectrograms.py">
+    <entry file="file://$PROJECT_DIR$/archive/spectrogramprovider/prepare_spectrograms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
           <folding>
             <element signature="e#1#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/predictorprovider/MockPredictorProvider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -655,16 +686,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/audiotaggermodel/AudioTaggerModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/prepare_spectrograms.py" />
     <entry file="file://$PROJECT_DIR$/model/SpectrogramProvider.py" />
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/archive/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
           <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
@@ -674,7 +697,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/threading_test.py">
+    <entry file="file://$PROJECT_DIR$/archive/threading_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
@@ -684,7 +707,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guiprovider/audiotaggerwindow.py">
+    <entry file="file://$PROJECT_DIR$/archive/guiprovider/kv/kivy.kv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="99" lean-forward="true" selection-start-line="52" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/audiotaggermodel_interfaces/IAudioTaggerModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="60" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/guiprovider/kv/main_copy.kv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/predictorprovider_interfaces/IPredictorProvider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/prepare_spectrograms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/threadedApp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="180" column="23" selection-start-line="180" selection-start-column="23" selection-end-line="180" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/spectrogramprovider/SpectrogramProvider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="822">
+          <caret line="77" column="23" lean-forward="true" selection-start-line="1" selection-end-line="77" selection-end-column="23" />
+          <folding>
+            <element signature="e#1#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/startup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewer/IViewer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/spectrogramprovider/MockPictureProvider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="54" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/IModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/predictorprovider/MockPredictorProvider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="86" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/guiprovider/kivyApp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="39" selection-start-line="39" selection-end-line="40" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/audiotaggermodel/AudioTaggerModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/guiprovider/mainApp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-189">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/guiprovider/kv/main.kv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/guiprovider/audiotaggerwindow.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
@@ -694,12 +845,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spectrogramprovider/MockPictureProvider.py">
+    <entry file="file://$PROJECT_DIR$/viewer/kv/kivy.kv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/audiotaggermodel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="54" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="54" />
+        <state relative-caret-position="141">
+          <caret line="41" selection-start-line="41" selection-end-line="42" selection-end-column="74" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#1#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewer/mainApp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="71" column="74" selection-start-line="71" selection-start-column="74" selection-end-line="71" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -707,67 +871,9 @@
     <entry file="file://$PROJECT_DIR$/startup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
           <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guiprovider/kv/main_copy.kv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guiprovider/kv/kivy.kv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="99" lean-forward="true" selection-start-line="2" selection-end-line="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threadedApp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2430">
-          <caret line="180" column="23" selection-start-line="180" selection-start-column="23" selection-end-line="180" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guiprovider/kivyApp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guiprovider/kv/main.kv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spectrogramprovider/SpectrogramProvider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="48" column="41" lean-forward="true" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
-          <folding>
-            <element signature="e#1#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guiprovider/mainApp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="71" lean-forward="true" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
+            <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>

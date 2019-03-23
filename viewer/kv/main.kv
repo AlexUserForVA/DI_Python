@@ -1,0 +1,95 @@
+<RootWidget>:
+    info: 'very cool'
+
+    GridLayout:
+        cols: 2
+        padding: 10
+
+        Image:
+            texture: root.image_texture
+
+        BoxLayout:
+            orientation: "vertical"
+            GridLayout:
+                cols: 2
+                row_force_default: True
+                row_default_height: 40
+                spacing: 10, 10
+                Label:
+                    id: grid1labelButton
+                    text: 'StartButton'
+                Button:
+                    id: but_1
+                    font_size: 20
+                    text: 'Start Spectrograms'
+                    on_press: root.start_second_thread()
+                Label:
+                    id: grid1label1
+                    text: 'TestSlider'
+                Slider:
+                    value: 5
+                    range: (0,20)
+                    step: 0.1
+                Label:
+                    id: grid1label1
+                    text: 'TestToggle'
+                GridLayout:
+                    cols: 2
+                    ToggleButton:
+                        text: 'on'
+                        group: 'group1'
+                    ToggleButton:
+                        text: 'off'
+                        group: 'group1'
+                Label:
+                    id: grid1label1
+                    text: 'TestTextInput'
+                TextInput:
+                    disabled: True
+        GridLayout:
+            cols: 1
+            Label:
+                text: root.class_list[0]
+            Widget:
+                canvas:
+                    Color:
+                        rgba: 0, 1, 1, .9
+                    RoundedRectangle:
+                        pos: self.x, self.y
+                        size: root.prob_list[0], 10
+            Label:
+                text: root.class_list[1]
+            Widget:
+                canvas:
+                    Color:
+                        rgba: 0, 1, 1, .9
+                    RoundedRectangle:
+                        pos: self.x, self.y
+                        size: root.prob_list[1], 10
+            Label:
+                text: root.class_list[2]
+            Widget:
+                canvas:
+                    Color:
+                        rgba: 0, 1, 1, .9
+                    RoundedRectangle:
+                        pos: self.x, self.y
+                        size: root.prob_list[2], 10
+            Label:
+                text: root.class_list[3]
+            Widget:
+                canvas:
+                    Color:
+                        rgba: 0, 1, 1, .9
+                    RoundedRectangle:
+                        pos: self.x, self.y
+                        size: root.prob_list[3], 10
+            Label:
+                text: root.class_list[4]
+            Widget:
+                canvas:
+                    Color:
+                        rgba: 0, 1, 1, .9
+                    RoundedRectangle:
+                        pos: self.x, self.y
+                        size: root.prob_list[4], 10

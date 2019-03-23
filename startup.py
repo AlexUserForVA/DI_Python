@@ -1,13 +1,6 @@
-from predictorprovider.MockPredictorProvider import MockPredictorProvider
-from spectrogramprovider.MockPictureProvider import MockPictureProvider
-from spectrogramprovider.SpectrogramProvider import SpectrogramProvider
-#from spectrogramprovider.MockPictureProvider import MockPictureProvider
-from audiotaggermodel.AudioTaggerModel import AudioTaggerModel
-from guiprovider.kivyApp import KivyApp
-
-from threading import Thread
+from model.audiotaggermodel import AudioTaggerModel
+from viewer.mainApp import MainApp
 
 if __name__ == '__main__':
-    spectrogramProvider = SpectrogramProvider()
-    gui = KivyApp(spectrogramProvider)
-    gui.run()
+    sp = AudioTaggerModel()
+    MainApp(sp).run()
