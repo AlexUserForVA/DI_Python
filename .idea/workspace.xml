@@ -2,134 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9015c207-3912-40b0-9892-7d06d89d8353" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/archive/startup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/audiotaggermodel/AudioTaggerModel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audiotaggermodel/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audiotaggermodel_interfaces/IAudioTaggerModel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/audiotaggermodel_interfaces/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guiprovider/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guiprovider/audiotaggerwindow.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guiprovider/kivyApp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guiprovider/kv/kivy.kv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guiprovider/kv/main.kv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guiprovider/kv/main_copy.kv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guiprovider/mainApp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictorprovider/MockPredictorProvider.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictorprovider/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictorprovider_interfaces/IPredictorProvider.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictorprovider_interfaces/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/MockPictureProvider.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/SpectrogramProvider.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/mercedes.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm1489630976_1914-7-31_1962.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm1506408192_1914-7-31_1962.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm1539962624_1914-7-31_1962.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm1556739840_1914-7-31_1962.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm1573517056_1914-7-31_1962.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm1590294272_1914-7-31_1962.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm1674245888_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm1691023104_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm1707800320_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm1724577536_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm1741354752_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm298514176_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm315291392_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3235444480_1914-7-31_1968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3252221696_1914-7-31_1968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3268998912_1914-7-31_1968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3285776128_1914-7-31_1968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3302553344_1914-7-31_1968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3319330560_1914-7-31_1968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3336107776_1914-7-31_1968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3352884992_1914-7-31_1968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3369662208_1914-7-31_1968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3386439424_1914-7-31_1968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3419993856_1914-7-31_1968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3436771072_1914-7-31_1968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3453548288_1914-7-31_1968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3470325504_1914-7-31_1968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3537434368_1914-7-31_1968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3554211584_1914-7-31_1968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3570988800_1914-7-31_1968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3587766016_1914-7-31_1968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3604543232_1914-7-31_1968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3621320448_1914-7-31_1968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3772315392_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3789092608_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3805869824_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3822647040_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3839424256_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3906533120_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3923310336_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3940087552_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3956864768_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm3973641984_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm4007196416_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm4023973632_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm4141414144_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm4158191360_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm415954688_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm4174968576_1914-7-31_1968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm4191745792_1914-7-31_1968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm4208523008_1914-7-31_1968.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm449509120_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm466286336_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm483063552_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm499840768_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm516617984_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000086_rm533395200_1914-7-31_1964.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm103389184_1955-1-6_2005.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm113481984_1955-1-6_2003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm120166400_1955-1-6_2005.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm12818688_1955-1-6_2003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm129154048_1955-1-6_2011.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm130259200_1955-1-6_2003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm147036416_1955-1-6_2003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm197368064_1955-1-6_2003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm230922496_1955-1-6_2003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm264476928_1955-1-6_2003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm331585792_1955-1-6_2003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm341607680_1955-1-6_1994.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm46373120_1955-1-6_2003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm566466816_1955-1-6_2003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm616798464_1955-1-6_2003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm633575680_1955-1-6_2003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm650352896_1955-1-6_2003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm683907328_1955-1-6_2003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm717461760_1955-1-6_2003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm734238976_1955-1-6_2003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm751016192_1955-1-6_2003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm784570624_1955-1-6_2003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm79927552_1955-1-6_2003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000100_rm96704768_1955-1-6_2003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm1100799232_1946-1-20_1990.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm1177734144_1946-1-20_1997.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm1313970688_1946-1-20_2001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm1330747904_1946-1-20_2001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm1448188416_1946-1-20_2001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm1906105600_1946-1-20_1990.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm1989991680_1946-1-20_1990.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm2033372160_1946-1-20_1997.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm2101517056_1946-1-20_2007.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm2118294272_1946-1-20_2007.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm2656610304_1946-1-20_2012.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm2687146752_1946-1-20_2006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm2703923968_1946-1-20_2006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm2922027776_1946-1-20_2006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm2938804992_1946-1-20_2006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm3222575872_1946-1-20_2001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm909940736_1946-1-20_2001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm958372352_1946-1-20_2006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/mock_data/nm0000186_rm991926784_1946-1-20_2006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider/prepare_spectrograms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider_interfaces/ISpectrogramProvider.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spectrogramprovider_interfaces/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/threadedApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/threadedApp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/threading_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/threading_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startup.py" beforeDir="false" afterPath="$PROJECT_DIR$/startup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -154,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/viewer/mainApp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="71" column="74" selection-start-line="71" selection-start-column="74" selection-end-line="71" selection-end-column="74" />
+            <state relative-caret-position="855">
+              <caret line="57" column="40" lean-forward="true" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -166,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/startup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            <state relative-caret-position="135">
+              <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -178,10 +52,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/audiotaggermodel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
+            <state relative-caret-position="615">
               <caret line="41" selection-start-line="41" selection-end-line="42" selection-end-column="74" />
               <folding>
                 <element signature="e#1#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/controller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -247,6 +133,7 @@
         <option value="$PROJECT_DIR$/guiprovider/mainApp.py" />
         <option value="$PROJECT_DIR$/guiprovider/kv/main.kv" />
         <option value="$PROJECT_DIR$/viewer/mainApp.py" />
+        <option value="$PROJECT_DIR$/controller/controller.py" />
         <option value="$PROJECT_DIR$/startup.py" />
       </list>
     </option>
@@ -269,16 +156,6 @@
             <path>
               <item name="DI_Python" type="b2602c69:ProjectViewProjectNode" />
               <item name="DI_Python" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DI_Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DI_Python" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DI_Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DI_Python" type="462c0819:PsiDirectoryNode" />
-              <item name="viewer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -557,16 +434,15 @@
       <workItem from="1553244610377" duration="8188000" />
       <workItem from="1553278976881" duration="4205000" />
       <workItem from="1553285474951" duration="1720000" />
-      <workItem from="1553326143253" duration="6186000" />
+      <workItem from="1553326143253" duration="7171000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92960000" />
+    <option name="totallyTimeSpent" value="93945000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18850194" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -592,7 +468,7 @@
       <window_info anchor="right" x="0" y="0" width="413" height="884" id="Documentation" order="5" side_tool="true" weight="0.2432283" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1840796" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18850194" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -848,9 +724,19 @@
     <entry file="file://$PROJECT_DIR$/viewer/kv/kivy.kv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/viewer/mainApp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" column="40" lean-forward="true" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/model/audiotaggermodel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
+        <state relative-caret-position="615">
           <caret line="41" selection-start-line="41" selection-end-line="42" selection-end-column="74" />
           <folding>
             <element signature="e#1#38#0" expanded="true" />
@@ -858,20 +744,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewer/mainApp.py">
+    <entry file="file://$PROJECT_DIR$/controller/controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="71" column="74" selection-start-line="71" selection-start-column="74" selection-end-line="71" selection-end-column="74" />
+        <state relative-caret-position="195">
+          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
           <folding>
-            <element signature="e#0#16#0" expanded="true" />
+            <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/startup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        <state relative-caret-position="135">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
