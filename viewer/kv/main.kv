@@ -7,6 +7,7 @@
             pos: self.pos
 
     but_1: but_1
+    but_2: but_2
     speedKnobLabel: speedKnobLabel
     img_texture: img_texture
 
@@ -14,20 +15,26 @@
         cols: 2
         padding: 20
         spacing: 20
-        BoxLayout:
-            orientation: "vertical"
+        GridLayout:
+            cols: 1
+            spacing: 20
             canvas:
                 Color:
                     rgb: 0.21, 0.25, 0.29
                 Rectangle:
                     size: self.size
                     pos: self.pos
+            Label:
+                bold: True
+                color: 0.7, 0.7, 0.7
+                size_hint_y: None
+                height: self.parent.height * 0.1
+                text: 'Current Spectrogram'
             Image:
                 padding: 20
                 id: img_texture
         GridLayout:
             cols: 2
-            padding: 20
             spacing: 20
             GridLayout:
                 padding: 20
@@ -41,6 +48,7 @@
                         pos: self.pos
                 Label:
                     text: 'Speed'
+                    bold: True
                     color: 0.7, 0.7, 0.7
                     size_hint_y: None
                     height: self.parent.height * 0.1
@@ -63,18 +71,27 @@
                         bold: True
                         id: speedKnobLabel
                         text: str(int(knob1.value))
-            Button:
-                id: but_1
-                text: 'Start'
-                font_size: 20
-                bold: True
-                size_hint_y: None
-                height: self.parent.height * 0.2
-                background_color: 0, 1, 0, 1
-                on_press: root.start_second_thread()
-
+            GridLayout:
+                cols: 1
+                spacing: 10
+                Button:
+                    id: but_1
+                    text: 'Start'
+                    font_size: 20
+                    bold: True
+                    background_color: 0, 1, 0, 1
+                    on_press: root.start_second_thread()
+                Button:
+                    id: but_2
+                    text: 'Pause'
+                    font_size: 20
+                    bold: True
+                    disabled: True
+                    background_color: 0, 0, 1, 1
+                    on_press: root.start_second_thread()
             BoxLayout:
                 orientation: "vertical"
+                padding: 10
                 canvas:
                     Color:
                         rgb: 0.21, 0.25, 0.29
@@ -90,12 +107,14 @@
                     cols: 2
                     ToggleButton:
                         text: 'Live'
+                        bold: True
+                        state: 'down'
                         group: 'sourceGroup'
                     ToggleButton:
                         text: 'File'
+                        bold: True
                         group: 'sourceGroup'
                 TextInput:
-                    disabled: True
 
         GridLayout:
             cols: 1

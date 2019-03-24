@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9015c207-3912-40b0-9892-7d06d89d8353" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controller/controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/audiotaggermodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/audiotaggermodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup.py" beforeDir="false" afterPath="$PROJECT_DIR$/startup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/viewer/kv/main.kv" beforeDir="false" afterPath="$PROJECT_DIR$/viewer/kv/main.kv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/viewer/mainApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/viewer/mainApp.py" afterDir="false" />
     </list>
@@ -30,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/viewer/mainApp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="201">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -54,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/viewer/kv/main.kv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+            <state relative-caret-position="435">
+              <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -125,8 +121,8 @@
         <option value="$PROJECT_DIR$/startup.py" />
         <option value="$PROJECT_DIR$/controller/controller.py" />
         <option value="$PROJECT_DIR$/model/audiotaggermodel.py" />
-        <option value="$PROJECT_DIR$/viewer/kv/main.kv" />
         <option value="$PROJECT_DIR$/viewer/mainApp.py" />
+        <option value="$PROJECT_DIR$/viewer/kv/main.kv" />
       </list>
     </option>
   </component>
@@ -439,7 +435,7 @@
       <workItem from="1553278976881" duration="4205000" />
       <workItem from="1553285474951" duration="1720000" />
       <workItem from="1553326143253" duration="7357000" />
-      <workItem from="1553423377692" duration="22388000" />
+      <workItem from="1553423377692" duration="25790000" />
     </task>
     <task id="LOCAL-00001" summary="Added controller class, instantiate mvc components in startup">
       <created>1553337402631</created>
@@ -452,12 +448,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116519000" />
+    <option name="totallyTimeSpent" value="119921000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18242122" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18242122" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -472,7 +468,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3291536" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.24660397" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.24660397" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -763,20 +759,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viewer/kv/main.kv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/viewer/mainApp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="201">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewer/kv/main.kv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
         </state>
       </provider>
     </entry>

@@ -27,6 +27,7 @@ class RootWidget(FloatLayout):
 
     def start_second_thread(self):
         self.but_1.disabled = True
+        self.but_2.disabled = False
         threading.Thread(target=self.second_thread).start()
 
     def second_thread(self):
@@ -40,6 +41,7 @@ class RootWidget(FloatLayout):
         image_texture.blit_buffer(arr, colorfmt='rgb', bufferfmt='ubyte')
         self.img_texture.texture = image_texture
 
+    @mainthread
     def update_Class_Prob_Bar(self, label, width, index):
         self.class_list[index] = label
         self.prob_list[index] = width
@@ -49,7 +51,7 @@ class MainApp(App, IViewer):
     kv_directory = 'viewer/kv'
 
     screen_width, screen_heigth = getScreenResolution()
-    window_width, window_heigth = screen_width / 1.5, screen_heigth / 1.5
+    window_width, window_heigth = screen_width / 1.5, screen_heigth / 1.4
     Window.size = (window_width, window_heigth)
 
     def __init__(self, model, **kwargs):
