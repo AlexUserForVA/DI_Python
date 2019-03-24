@@ -21,7 +21,7 @@ from viewer.IViewer import IViewer
 SLIDING_WINDOW = np.zeros((128, 256), dtype=np.float32)
 FRAME_COUNT = 0
 TEXT_BOX = None
-PREDICT_EVERY_K = None
+# PREDICT_EVERY_K = 20
 
 class AudioTaggerModel(IModel):
 
@@ -37,6 +37,8 @@ class AudioTaggerModel(IModel):
                "Writing"]
 
     viewers = []
+
+    predict_every_k = 20
 
     def subscribe(self, viewer):
         if not isinstance(viewer, IViewer):
@@ -63,18 +65,19 @@ class AudioTaggerModel(IModel):
         global TEXT_BOX
         global SLIDING_WINDOW
         global TAGGER
-        global PREDICT_EVERY_K
+        # global PREDICT_EVERY_K
 
         # check if there is audio content
         frame = data[0]
         if np.any(np.isnan(frame)):
             frame = np.zeros_like(frame, dtype=np.float32)
 
-        PREDICT_EVERY_K = 20
+        # PREDICT_EVERY_K = 20
 
         # increase frame count
         FRAME_COUNT += 1
-        FRAME_COUNT = np.mod(FRAME_COUNT, PREDICT_EVERY_K)
+        # FRAME_COUNT = np.mod(FRAME_COUNT, PREDICT_EVERY_K)
+        FRAME_COUNT = np.mod(FRAME_COUNT, self.predict_every_k)
         do_invoke = FRAME_COUNT == 0
 
         # update sliding window
@@ -86,15 +89,19 @@ class AudioTaggerModel(IModel):
         spec = SLIDING_WINDOW[::-1, :].copy() / 3.0
         spec = cv2.resize(spec, (spec.shape[1] * resz_spec, spec.shape[0] * resz_spec))
         spec = plt.cm.viridis(spec)[:, :, 0:3]
-        spec = (spec * 255).astype(np.uint8)
-        spec_rgb = cv2.cvtColor(spec, cv2.COLOR_RGB2BGR)
-        if spec_rgb.shape[1] < 512:
-            p = (512 - spec_rgb.shape[1]) // 2
-            spec_rgb = np.pad(spec_rgb, ((0, 0), (p, p), (0, 0)), mode="constant")
+        spec_bgr = (spec * 255).astype(np.uint8)
+        if spec_bgr.shape[1] < 512:
+            p = (512 - spec_bgr.shape[1]) // 2
+            spec_bgr = np.pad(spec_bgr, ((0, 0), (p, p), (0, 0)), mode="constant")
+
+        spec_bgr = cv2.flip(spec_bgr, 0)
+
         if do_invoke:
-            self.publishSpectrogram(spec_rgb)
-            self.predict(spec_rgb)
-        return spec_rgb
+           self.publishSpectrogram(spec_bgr)
+           self.predict(spec_bgr)
+
+    def setSpeed(self, value):
+        self.predict_every_k = int(value)
 
     def predict(self, input):
         probs = json.dumps(dict([elem, random.uniform(0, 1)] for elem in self.classes))

@@ -1,0 +1,14 @@
+background: 42, 53, 60
+panels: 54, 64, 71
+
+speed1:201, 17, 17
+speed2:207, 38, 19
+speed3:216, 70, 23
+speed4:223, 92, 25
+speed5:229, 116, 27
+speed6:234, 137, 29
+speed7:243, 171, 32
+speed8:252, 200, 35
+
+realtime-label:252, 200, 35
+

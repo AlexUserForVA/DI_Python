@@ -1,54 +1,113 @@
 <RootWidget>:
-    info: 'very cool'
+    canvas:
+        Color:
+            rgb: 0.16, 0.21, 0.24
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+    but_1: but_1
+    speedKnobLabel: speedKnobLabel
+    img_texture: img_texture
 
     GridLayout:
         cols: 2
-        padding: 10
-
-        Image:
-            texture: root.image_texture
-
+        padding: 20
+        spacing: 20
         BoxLayout:
             orientation: "vertical"
+            canvas:
+                Color:
+                    rgb: 0.21, 0.25, 0.29
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            Image:
+                padding: 20
+                id: img_texture
+        GridLayout:
+            cols: 2
+            padding: 20
+            spacing: 20
             GridLayout:
-                cols: 2
-                row_force_default: True
-                row_default_height: 40
-                spacing: 10, 10
+                padding: 20
+                spacing: 30
+                cols: 1
+                canvas:
+                    Color:
+                        rgb: 0.21, 0.25, 0.29
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
                 Label:
-                    id: grid1labelButton
-                    text: 'StartButton'
-                Button:
-                    id: but_1
-                    font_size: 20
-                    text: 'Start Spectrograms'
-                    on_press: root.start_second_thread()
+                    text: 'Speed'
+                    color: 0.7, 0.7, 0.7
+                    size_hint_y: None
+                    height: self.parent.height * 0.1
+                GridLayout:
+                    cols: 2
+                    Knob:
+                        id: knob1
+                        size: 80, 80
+                        min: 0
+                        max: 100
+                        step: 1
+                        value: 0
+                        knobimg_source: "viewer/images/knob.png"
+                        show_label: True
+                        show_marker: True
+                        marker_img: "viewer/images/speed_bline.png"
+                        knob_size: 0.9
+                        on_value: app.speedSliderEvent(knob1.value)
+                    Label:
+                        bold: True
+                        id: speedKnobLabel
+                        text: str(int(knob1.value))
+            Button:
+                id: but_1
+                text: 'Start'
+                font_size: 20
+                bold: True
+                size_hint_y: None
+                height: self.parent.height * 0.2
+                background_color: 0, 1, 0, 1
+                on_press: root.start_second_thread()
+
+            BoxLayout:
+                orientation: "vertical"
+                canvas:
+                    Color:
+                        rgb: 0.21, 0.25, 0.29
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
                 Label:
                     id: grid1label1
-                    text: 'TestSlider'
-                Slider:
-                    value: 5
-                    range: (0,20)
-                    step: 0.1
-                Label:
-                    id: grid1label1
-                    text: 'TestToggle'
+                    bold: True
+                    color: 0.7, 0.7, 0.7
+                    text: 'Source'
                 GridLayout:
                     cols: 2
                     ToggleButton:
-                        text: 'on'
-                        group: 'group1'
+                        text: 'Live'
+                        group: 'sourceGroup'
                     ToggleButton:
-                        text: 'off'
-                        group: 'group1'
-                Label:
-                    id: grid1label1
-                    text: 'TestTextInput'
+                        text: 'File'
+                        group: 'sourceGroup'
                 TextInput:
                     disabled: True
+
         GridLayout:
             cols: 1
+            canvas:
+                Color:
+                    rgb: 0.21, 0.25, 0.29
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
             Label:
+                bold: True
+                color: 0.7, 0.7, 0.7
                 text: root.class_list[0]
             Widget:
                 canvas:
@@ -58,6 +117,8 @@
                         pos: self.x, self.y
                         size: root.prob_list[0], 10
             Label:
+                bold: True
+                color: 0.7, 0.7, 0.7
                 text: root.class_list[1]
             Widget:
                 canvas:
@@ -67,6 +128,8 @@
                         pos: self.x, self.y
                         size: root.prob_list[1], 10
             Label:
+                bold: True
+                color: 0.7, 0.7, 0.7
                 text: root.class_list[2]
             Widget:
                 canvas:
@@ -76,6 +139,8 @@
                         pos: self.x, self.y
                         size: root.prob_list[2], 10
             Label:
+                bold: True
+                color: 0.7, 0.7, 0.7
                 text: root.class_list[3]
             Widget:
                 canvas:
@@ -85,6 +150,8 @@
                         pos: self.x, self.y
                         size: root.prob_list[3], 10
             Label:
+                bold: True
+                color: 0.7, 0.7, 0.7
                 text: root.class_list[4]
             Widget:
                 canvas:

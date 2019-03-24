@@ -5,6 +5,8 @@ from controller.controller import Controller
 if __name__ == '__main__':
     m = AudioTaggerModel()
     v = MainApp(m)
-    # c = Controller(m, v)
+    c = Controller(m, v)
+
+    v.registerController(c)
 
     v.run()
