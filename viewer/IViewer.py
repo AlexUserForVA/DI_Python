@@ -2,7 +2,7 @@ class IViewer:
 
     def onSpectrogramChanged(self, spectrogram):
         """
-        This function gets invoked when the model which
+        This function gets invoked when the server which
         the implemented viewer is subscribed to has calculated
         a new spectrogram.
 
@@ -17,7 +17,7 @@ class IViewer:
 
     def onPredictionChanged(self, prob_dict):
         """
-        This function gets invoked when the model which
+        This function gets invoked when the server which
         the implemented viewer is subscribed to has calculated
         a new class probabilities during prediction.
 

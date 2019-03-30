@@ -9,8 +9,8 @@ class IModel:
         """
         Model-Viewer communication is based on Publisher/Subscriber-Pattern.
 
-        Call the model to subscribe a object of type IViewer.
-        Every time the model changes the registered viewer gets
+        Call the server to subscribe a object of type IViewer.
+        Every time the server changes the registered viewer gets
         notified.
         Parameters
         ----------

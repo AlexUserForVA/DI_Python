@@ -1,3 +1,20 @@
+#:import lv kivy.uix.listview
+#:import la kivy.adapters.listadapter
+
+<ListItemButton>:
+    size_hint_y: None
+    size: self.width, 50
+    bold: True
+    background_normal: ''
+    deselected_color: 0.21, 0.25, 0.29, 1
+    selected_color: 0.31, 0.35, 0.39, 1
+    canvas.before:
+        Color:
+            rgba: 0.7, 0.7, 0.7, 1
+        Line:
+            width: 2
+            rectangle: self.x, self.y, self.width, self.height
+
 <RootWidget>:
     canvas:
         Color:
@@ -26,7 +43,6 @@
                     pos: self.pos
             Label:
                 bold: True
-                color: 0.7, 0.7, 0.7
                 size_hint_y: None
                 height: self.parent.height * 0.1
                 text: 'Current Spectrogram'
@@ -49,7 +65,6 @@
                 Label:
                     text: 'Speed'
                     bold: True
-                    color: 0.7, 0.7, 0.7
                     size_hint_y: None
                     height: self.parent.height * 0.1
                 GridLayout:
@@ -79,16 +94,27 @@
                     text: 'Start'
                     font_size: 20
                     bold: True
-                    background_color: 0, 1, 0, 1
-                    on_press: root.start_second_thread()
+                    background_normal: ''
+                    background_color: 0.35, 0.66, 0.41, 1
+                    on_press: root.start_Button_pressed()
+                    canvas.before:
+                        Color:
+                            rgba: 1, 1, 1, 1
+                        Line:
+                            width: 4
+                            rectangle: self.x, self.y, self.width, self.height
                 Button:
                     id: but_2
                     text: 'Pause'
                     font_size: 20
                     bold: True
-                    disabled: True
                     background_color: 0, 0, 1, 1
-                    on_press: root.start_second_thread()
+                    canvas.before:
+                        Color:
+                            rgba: 1, 1, 1, 1
+                        Line:
+                            width: 4
+                            rectangle: self.x, self.y, self.width, self.height
             BoxLayout:
                 orientation: "vertical"
                 padding: 10
@@ -101,7 +127,6 @@
                 Label:
                     id: grid1label1
                     bold: True
-                    color: 0.7, 0.7, 0.7
                     text: 'Source'
                 GridLayout:
                     cols: 2
@@ -126,7 +151,6 @@
                     pos: self.pos
             Label:
                 bold: True
-                color: 0.7, 0.7, 0.7
                 text: root.class_list[0]
             Widget:
                 canvas:
@@ -137,7 +161,6 @@
                         size: root.prob_list[0], 10
             Label:
                 bold: True
-                color: 0.7, 0.7, 0.7
                 text: root.class_list[1]
             Widget:
                 canvas:
@@ -148,7 +171,6 @@
                         size: root.prob_list[1], 10
             Label:
                 bold: True
-                color: 0.7, 0.7, 0.7
                 text: root.class_list[2]
             Widget:
                 canvas:
@@ -159,7 +181,6 @@
                         size: root.prob_list[2], 10
             Label:
                 bold: True
-                color: 0.7, 0.7, 0.7
                 text: root.class_list[3]
             Widget:
                 canvas:
@@ -170,7 +191,6 @@
                         size: root.prob_list[3], 10
             Label:
                 bold: True
-                color: 0.7, 0.7, 0.7
                 text: root.class_list[4]
             Widget:
                 canvas:
@@ -179,3 +199,11 @@
                     RoundedRectangle:
                         pos: self.x, self.y
                         size: root.prob_list[4], 10
+        ListView:
+            adapter:
+                la.ListAdapter(
+                data=["Item #{0}".format(i) for i in xrange(5)],
+                # data=['SpeechDetector', 'DCASE Predictor', 'Applause Predictor'],
+                selection_mode='single',
+                allow_empty_selection=False,
+                cls=lv.ListItemButton)

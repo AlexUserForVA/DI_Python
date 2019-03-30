@@ -12,7 +12,7 @@ from kivy.properties import ListProperty, ObjectProperty
 
 
 from viewer.IViewer import IViewer
-from model.audiotaggermodel import AudioTaggerModel
+from server.audioTaggerModel import AudioTaggerModel
 
 
 class RootWidget(FloatLayout):
