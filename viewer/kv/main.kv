@@ -202,7 +202,8 @@
         ListView:
             adapter:
                 la.ListAdapter(
-                data=["Item #{0}".format(i) for i in xrange(5)],
+                data=['{} ({} classes)'.format(elem['displayname'], elem['classes'])  for elem in app.getPredList()],
+                # data=["Item #{0}".format(i) for i in xrange(5)],
                 # data=['SpeechDetector', 'DCASE Predictor', 'Applause Predictor'],
                 selection_mode='single',
                 allow_empty_selection=False,

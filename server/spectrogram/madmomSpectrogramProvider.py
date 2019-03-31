@@ -16,7 +16,6 @@ class MadmomSpectrogramProvider:
         self.curImage = None
 
     def run(self):
-        print("Helo")
         processor = IOProcessor(in_processor=processor_pipeline2, out_processor=self.output_processor)
         # process_online(processor, infile='server/2019-03-26-12:33:33.wav', outfile=None, sample_rate=32000)
         process_online(processor, infile=None, outfile=None, sample_rate=32000)

@@ -60,9 +60,19 @@ class MainApp(App, IViewer):
     def __init__(self, **kwargs):
         super(MainApp, self).__init__(**kwargs)
 
+        self.predList = self.loadConfig()
+        x = 2
+
+    def getPredList(self):
+        return self.predList
+
     def build(self):
         self.window = RootWidget()
         return self.window
+
+    def loadConfig(self):
+        response = urllib2.urlopen("http://127.0.0.1:5000/pred_list")
+        return json.loads(response.read())
 
     def getCurrentSpectrogram(self, dt):
         response = urllib2.urlopen("http://127.0.0.1:5000/live_spec")

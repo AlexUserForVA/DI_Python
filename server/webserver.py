@@ -1,3 +1,4 @@
+import csv
 import json
 import threading
 
@@ -7,26 +8,16 @@ from server.spectrogram.madmomSpectrogramProvider import MadmomSpectrogramProvid
 from server.predictor.dcasePredictorProvider import DcasePredictorProvider
 from server.audioTaggerModel import AudioTaggerModel
 
-'''
-class Spectrogram(Resource):
+############### construct audio tagger model ####################
+with open('config/predictors.csv') as file:
+    csvReader = csv.reader(file, delimiter=';')
+    next(csvReader, None)  # skip header
+    predList = [{'displayname': line[0], 'classes': line[1], 'description': line[2]} for line in csvReader]
 
-    def __init__(self, model):SpectrogramSpectrogram
-        self.model = model
-
-    def get(self):
-        data = self.model.getCurrentSpectrogram().flatten()
-        return json.dumps({'spec': data})
-
-
-class Prediction(Resource):
-
-    def __init__(self, model):
-        self.model = model
-
-    def get(self):
-        return json.dumps(self.model.getCurrentPrediction())
-'''
-#############################################
+with open('config/sources.csv') as file:
+    csvReader = csv.reader(file, delimiter=';')
+    next(csvReader, None)  # skip header
+    sourceList = [{'displayname': line[0], 'path': line[1]} for line in csvReader]
 
 specsProvider = MadmomSpectrogramProvider()
 predProvider = DcasePredictorProvider()
@@ -35,15 +26,9 @@ model = AudioTaggerModel(specsProvider, predProvider)
 
 threading.Thread(target=model.specProvider.run).start()
 
-app = Flask(__name__)
 
-'''
-def gen(model):
-    while True:
-            frame = model.getCurrentLiveSpectrogram()
-            yield (b'--frame\r\n'
-                   b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
-'''
+###### startup web server to provide audio tagger REST API ######
+app = Flask(__name__)
 
 @app.route('/live_spec')
 def live_spec():
@@ -74,6 +59,26 @@ def live_pred():
 @app.route('/queued_pred')
 def queued_pred():
     content = model.getQueuedPrediction()
+    response = app.response_class(
+        response=json.dumps(content),
+        status=200,
+        mimetype='application/json'
+    )
+    return response
+
+@app.route('/pred_list')
+def pred_list():
+    content = predList
+    response = app.response_class(
+        response=json.dumps(content),
+        status=200,
+        mimetype='application/json'
+    )
+    return response
+
+@app.route('/source_list')
+def source_list():
+    content = [elem['displayname'] for elem in sourceList]
     response = app.response_class(
         response=json.dumps(content),
         status=200,

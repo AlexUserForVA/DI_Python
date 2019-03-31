@@ -15,6 +15,7 @@ class AudioTaggerModel:
         specProvider.registerModel(self)
         predProvider.registerModel(self)
 
+
     '''
     def getQueuedSpectrogram(self):
         return self.specProvider.getQueuedSpectrogram()
