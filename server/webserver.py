@@ -2,7 +2,7 @@ import csv
 import json
 import threading
 
-from flask import Flask, Response
+from flask import Flask, Response, request
 
 from server.spectrogram.madmomSpectrogramProvider import MadmomSpectrogramProvider
 from server.predictor.dcasePredictorProvider import DcasePredictorProvider
@@ -12,25 +12,29 @@ from server.audioTaggerModel import AudioTaggerModel
 with open('config/predictors.csv') as file:
     csvReader = csv.reader(file, delimiter=';')
     next(csvReader, None)  # skip header
-    predList = [{'displayname': line[0], 'classes': line[1], 'description': line[2]} for line in csvReader]
+    predList = [{'id' : line[0], 'displayname': line[1], 'classes': line[2], 'description': line[3]} for line in csvReader]
 
 with open('config/sources.csv') as file:
     csvReader = csv.reader(file, delimiter=';')
     next(csvReader, None)  # skip header
-    sourceList = [{'displayname': line[0], 'path': line[1]} for line in csvReader]
+    sourceList = [{'id' : line[0],'displayname': line[1], 'path': line[2]} for line in csvReader]
 
 specsProvider = MadmomSpectrogramProvider()
 predProvider = DcasePredictorProvider()
 
 model = AudioTaggerModel(specsProvider, predProvider)
 
-threading.Thread(target=model.specProvider.run).start()
+thread = threading.Thread(target=model.specProvider.run).start()
+
+def refreshAudioTagger(settings):
+    print("We would like to stop the current thread now and start another one!")
+    print(settings)
 
 
 ###### startup web server to provide audio tagger REST API ######
 app = Flask(__name__)
 
-@app.route('/live_spec')
+@app.route('/live_spec', methods=['GET'])
 def live_spec():
     content = model.getLiveSpectrogram()
     # content = (b'--frame\r\n'
@@ -38,7 +42,7 @@ def live_spec():
     return Response(content,
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
-@app.route('/queued_spec')
+@app.route('/queued_spec', methods=['GET'])
 def queued_spec():
     content = model.getQueuedSpectrogram()
     # content = (b'--frame\r\n'
@@ -46,7 +50,7 @@ def queued_spec():
     return Response(content,
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
-@app.route('/live_pred')
+@app.route('/live_pred', methods=['GET'])
 def live_pred():
     content = model.getLivePrediction()
     response = app.response_class(
@@ -56,7 +60,7 @@ def live_pred():
     )
     return response
 
-@app.route('/queued_pred')
+@app.route('/queued_pred', methods=['GET'])
 def queued_pred():
     content = model.getQueuedPrediction()
     response = app.response_class(
@@ -66,7 +70,7 @@ def queued_pred():
     )
     return response
 
-@app.route('/pred_list')
+@app.route('/pred_list', methods=['GET'])
 def pred_list():
     content = predList
     response = app.response_class(
@@ -76,15 +80,21 @@ def pred_list():
     )
     return response
 
-@app.route('/source_list')
+@app.route('/source_list', methods=['GET'])
 def source_list():
-    content = [elem['displayname'] for elem in sourceList]
+    content = [{'id' : elem['id'],'displayname': elem['displayname']} for elem in sourceList]
     response = app.response_class(
         response=json.dumps(content),
         status=200,
         mimetype='application/json'
     )
     return response
+
+@app.route('/settings', methods=['POST'])
+def add_message():
+    content = request.json
+    refreshAudioTagger(content)
+    return 'OK'
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', debug=False)

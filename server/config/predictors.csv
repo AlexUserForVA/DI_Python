@@ -1,4 +1,4 @@
-displayname;classes;description
-DCASEPredictor;41;sample description for dcase
-ApplausePredictor;3;sample description for detecting applause
-GenreClassifier;11;predicts the genre of a song
+id;displayname;classes;description
+0;DCASEPredictor;41;sample description for dcase
+1;ApplausePredictor;3;sample description for detecting applause
+2;GenreClassifier;11;predicts the genre of a song

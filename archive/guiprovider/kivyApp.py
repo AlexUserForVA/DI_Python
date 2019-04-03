@@ -11,7 +11,7 @@ from kivy.core.window import Window
 
 # from audiotaggerwindow import AudioTaggerWindow
 from archive.spectrogramprovider.SpectrogramProvider import SpectrogramProvider
-from utils.utils import getScreenResolution
+from viewer.utils.utils import getScreenResolution
 
 class AudioTaggerWindow(FloatLayout):
 

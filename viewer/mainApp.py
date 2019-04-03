@@ -1,4 +1,3 @@
-import threading
 import json
 import urllib2
 import numpy as np
@@ -7,34 +6,38 @@ import time
 
 import requests
 from array import array
-from flask import Flask, request, Response
 
 from kivy.app import App
 from kivy.clock import Clock, mainthread
 from kivy.uix.floatlayout import FloatLayout
 from kivy.graphics.texture import Texture
-from kivy.garden.knob import Knob
-from kivy.graphics import Color
 from kivy.core.window import Window
-from kivy.properties import ListProperty, ObjectProperty
-from utils.utils import getScreenResolution
+from kivy.properties import ListProperty, StringProperty
+from viewer.utils.utils import getScreenResolution
 
 from viewer.IViewer import IViewer
-from server.IModel import IModel
-from controller.IController import IController
 
 class RootWidget(FloatLayout):
     prob_list = ListProperty([100, 100, 100, 100, 100])
     class_list = ListProperty(['-', '-', '-', '-', '-'])
+    pred_list = ListProperty([])
+    source_list = ListProperty([])
+    sourceProperty = StringProperty()
+    predictorProperty = StringProperty()
 
-    def setModel(self, model):
-        self.model = model
-
-    def start_Button_pressed(self):
+    def start_Button_pressed(self, label):
         self.but_1.disabled = True
-        self.but_2.disabled = False
-        Clock.schedule_interval(App.get_running_app().getCurrentSpectrogram, 2)
-        # Clock.schedule_interval(App.get_running_app().getCurrentPrediction, 2)
+        Clock.schedule_interval(App.get_running_app().getCurrentSpectrogram, 0.02)
+        # Clock.schedule_interval(App.get_running_app().getCurrentPrediction, 1)
+
+    def liveOrFileSettingHasChanged(self, instance, value):
+        App.get_running_app().setIsLive(value)
+
+    def predSettingHasChanged(self, *args):
+        App.get_running_app().setPredictor(args[0].selection[0].text)
+
+    def sourceSettingHasChanged(self, *args):
+        App.get_running_app().setFile(args[0].selection[0].text)
 
     @mainthread
     def update_Spectrogram_Image(self, image):
@@ -57,22 +60,49 @@ class MainApp(App, IViewer):
     window_width, window_heigth = screen_width / 1.5, screen_heigth / 1.4
     Window.size = (window_width, window_heigth)
 
-    def __init__(self, **kwargs):
-        super(MainApp, self).__init__(**kwargs)
-
-        self.predList = self.loadConfig()
-        x = 2
-
-    def getPredList(self):
-        return self.predList
-
     def build(self):
         self.window = RootWidget()
+        self.window.pred_list = self.loadPredictors()
+        self.window.source_list = self.loadSources()
+
+        self.isLive = True
+        self.file = self.window.source_list[0]['displayname']
+        self.predictor = self.window.pred_list[0]['displayname']
+
+        self.setSummaryLabels()
+
+        self.window.switch_1.bind(active=self.window.liveOrFileSettingHasChanged)
+        self.window.predView.adapter.bind(on_selection_change=self.window.predSettingHasChanged) # doesn't work in .kv file
+        self.window.sourceView.adapter.bind(on_selection_change=self.window.sourceSettingHasChanged)  # doesn't work in .kv file
+
         return self.window
 
-    def loadConfig(self):
+    def setSummaryLabels(self):
+        if self.isLive:
+            self.window.sourceProperty = 'Microphone'
+        else:
+            self.window.sourceProperty = self.file
+        self.window.predictorProperty = self.predictor
+
+    def loadPredictors(self):
         response = urllib2.urlopen("http://127.0.0.1:5000/pred_list")
         return json.loads(response.read())
+
+    def loadSources(self):
+        response = urllib2.urlopen("http://127.0.0.1:5000/source_list")
+        return json.loads(response.read())
+
+    def setIsLive(self, value):
+        self.isLive = value
+        self.notifyBackendAboutSettingsChanged()
+
+    def setFile(self, value):
+        self.file = value
+        self.notifyBackendAboutSettingsChanged()
+
+    def setPredictor(self, value):
+        self.predictor = value
+        self.notifyBackendAboutSettingsChanged()
 
     def getCurrentSpectrogram(self, dt):
         response = urllib2.urlopen("http://127.0.0.1:5000/live_spec")
@@ -103,12 +133,9 @@ class MainApp(App, IViewer):
             class_width = prob_dict.values()[sorted_values[40 - i]] * 350
             self.window.update_Class_Prob_Bar(class_label, class_width, i)
 
-    ### On controller widget changed - functions ###
-    def speedSliderEvent(self, value):
-        value = int(value)
-        if value < 100 and value > 90:
-            self.window.speedKnobLabel.text = 'Realtime'
-            self.window.speedKnobLabel.color = 0.96, 0.76, 0.28, 1
-        else:
-            self.window.speedKnobLabel.text = str(value)
-            self.window.speedKnobLabel.color = 0.7, 0.7, 0.7, 1
+    def notifyBackendAboutSettingsChanged(self):
+        self.setSummaryLabels()
+        settingsDict = {'isLive' : self.isLive, 'file' : self.file, 'predictor' : self.predictor}
+        res = requests.post('http://localhost:5000/settings', json=settingsDict)
+
+
