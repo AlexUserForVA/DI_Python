@@ -28,7 +28,7 @@ class RootWidget(FloatLayout):
     def start_Button_pressed(self, label):
         self.but_1.disabled = True
         Clock.schedule_interval(App.get_running_app().getCurrentSpectrogram, 0.02)
-        # Clock.schedule_interval(App.get_running_app().getCurrentPrediction, 1)
+        Clock.schedule_interval(App.get_running_app().getCurrentPrediction, 1)
 
     def liveOrFileSettingHasChanged(self, instance, value):
         App.get_running_app().setIsLive(value)
@@ -119,10 +119,15 @@ class MainApp(App, IViewer):
     def getCurrentPrediction(self, dt):
         response = urllib2.urlopen("http://127.0.0.1:5000/live_pred")
         prob_dict = json.loads(response.read())
-        sorted_values = np.argsort(prob_dict.values())
+        if len(prob_dict) > 5:  # show the 5 most probable classes
+            sorted_dict = sorted(prob_dict, key=lambda i: i['prob'], reverse=True)
+        else:
+            sorted_dict = sorted(prob_dict, key=lambda i: i['pos'])
         for i in range(5):
-            class_label = prob_dict.keys()[sorted_values[40 - i]]
-            class_width = prob_dict.values()[sorted_values[40 - i]] * 350
+            # class_label = prob_dict.keys()[sorted_values[40 - i]]
+            # class_width = prob_dict.values()[sorted_values[40 - i]] * 350
+            class_label = sorted_dict[i]['label']
+            class_width = sorted_dict[i]['prob'] * 350
             self.window.update_Class_Prob_Bar(class_label, class_width, i)
 
     def onPredictionChanged(self, json_class_probs):

@@ -2,19 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9015c207-3912-40b0-9892-7d06d89d8353" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/guiprovider/audiotaggerwindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/guiprovider/audiotaggerwindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/guiprovider/kivyApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive/guiprovider/kivyApp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/IController.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/controller.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ressources/colorCodes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/archive/ressources/colorCodes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/config/predictors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/predictors.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/config/sources.csv" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/sources.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/webserver.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/webserver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/viewer/kv/main.kv" beforeDir="false" afterPath="$PROJECT_DIR$/viewer/kv/main.kv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/viewer/mainApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/viewer/mainApp.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,7 +83,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/webserver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
+            <state relative-caret-position="315">
               <caret line="63" column="18" lean-forward="true" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -105,7 +92,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/viewer/utils/utils.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -114,13 +101,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/viewer/mainApp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="84" column="54" lean-forward="true" selection-start-line="84" selection-start-column="54" selection-end-line="84" selection-end-column="54" />
+            <state relative-caret-position="398">
+              <caret line="121" column="28" selection-start-line="121" selection-start-column="28" selection-end-line="121" selection-end-column="28" />
               <folding>
-                <element signature="e#1#12#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -517,7 +504,7 @@
       <workItem from="1553844251838" duration="9999000" />
       <workItem from="1553948771403" duration="5944000" />
       <workItem from="1554025631315" duration="6298000" />
-      <workItem from="1554301200644" duration="20169000" />
+      <workItem from="1554301200644" duration="21115000" />
     </task>
     <task id="LOCAL-00001" summary="Added controller class, instantiate mvc components in startup">
       <created>1553337402631</created>
@@ -540,11 +527,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554031589043</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="changed GUI, added post control to Backend">
+      <created>1554322657744</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554322657744</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198454000" />
+    <option name="totallyTimeSpent" value="199400000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -614,7 +608,8 @@
     <MESSAGE value="Added controller class, instantiate mvc components in startup" />
     <MESSAGE value="Added webserver functionality, WebAPI REST Services" />
     <MESSAGE value="Added two API endpoints (get available predictors and sources)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added two API endpoints (get available predictors and sources)" />
+    <MESSAGE value="changed GUI, added post control to Backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed GUI, added post control to Backend" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -980,6 +975,30 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/viewer/kv/main.kv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2640">
+          <caret line="176" column="23" selection-start-line="176" selection-start-column="23" selection-end-line="176" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewer/utils/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/webserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="63" column="18" lean-forward="true" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/startup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -989,35 +1008,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/viewer/mainApp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="84" column="54" lean-forward="true" selection-start-line="84" selection-start-column="54" selection-end-line="84" selection-end-column="54" />
+        <state relative-caret-position="398">
+          <caret line="121" column="28" selection-start-line="121" selection-start-column="28" selection-end-line="121" selection-end-column="28" />
           <folding>
-            <element signature="e#1#12#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/viewer/kv/main.kv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2640">
-          <caret line="176" column="23" selection-start-line="176" selection-start-column="23" selection-end-line="176" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/webserver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="63" column="18" lean-forward="true" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/viewer/utils/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
         </state>
       </provider>
     </entry>
