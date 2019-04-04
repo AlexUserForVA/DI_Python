@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 from madmom.processors import IOProcessor, process_online
-from prepare_spectrograms import processor_pipeline2
+from spectrogram.prepare_spectrograms import processor_pipeline2
 
 class MadmomSpectrogramProvider:
 
