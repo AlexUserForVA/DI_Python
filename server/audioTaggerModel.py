@@ -1,4 +1,4 @@
-import Queue
+import queue
 
 class AudioTaggerModel:
 
@@ -6,8 +6,8 @@ class AudioTaggerModel:
         self.specProvider = specProvider
         self.predProvider = predProvider
 
-        self.spectrogramQueue = Queue.Queue()
-        self.predictionQueue = Queue.Queue()
+        self.spectrogramQueue = queue.Queue()
+        self.predictionQueue = queue.Queue()
 
         self.liveSpec = None
         self.livePred = None
