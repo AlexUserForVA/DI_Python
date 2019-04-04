@@ -1,10 +1,10 @@
 import cv2
-import Queue
+import queue
 import numpy as np
 import matplotlib.pyplot as plt
 
 from madmom.processors import IOProcessor, process_online
-from server.spectrogram.prepare_spectrograms import processor_pipeline2
+from prepare_spectrograms import processor_pipeline2
 
 class MadmomSpectrogramProvider:
 
@@ -12,7 +12,7 @@ class MadmomSpectrogramProvider:
         self.predict_every_k = 20
         self.frame_count = 0
         self.sliding_window = np.zeros((128, 256), dtype=np.float32)
-        self.queue = Queue.Queue()
+        self.queue = queue.Queue()
         self.curImage = None
 
     def run(self):

@@ -4,9 +4,9 @@ import threading
 
 from flask import Flask, Response, request
 
-from server.spectrogram.madmomSpectrogramProvider import MadmomSpectrogramProvider
-from server.predictor.dcasePredictorProvider import DcasePredictorProvider
-from server.audioTaggerModel import AudioTaggerModel
+from spectrogram.madmomSpectrogramProvider import MadmomSpectrogramProvider
+from predictor.dcasePredictorProvider import DcasePredictorProvider
+from audioTaggerModel import AudioTaggerModel
 
 ############### construct audio tagger model ####################
 with open('config/predictors.csv') as file:
