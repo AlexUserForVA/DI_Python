@@ -42,6 +42,14 @@ def live_spec():
     return Response(content,
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
+@app.route('/live_spec_browser', methods=['GET'])
+def live_spec_browser():
+    content = model.getLiveSpectrogram()
+    content = (b'--frame\r\n'
+                b'Content-Type: image/jpeg\r\n\r\n' + content + b'\r\n\r\n')
+    return Response(content,
+                    mimetype='multipart/x-mixed-replace; boundary=frame')
+
 @app.route('/queued_spec', methods=['GET'])
 def queued_spec():
     content = model.getQueuedSpectrogram()
