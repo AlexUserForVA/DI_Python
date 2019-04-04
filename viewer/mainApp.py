@@ -1,11 +1,12 @@
 import json
-import urllib2
+# import urllib2
 import numpy as np
 import cv2
 import time
 
 import requests
 from array import array
+from urllib.request import urlopen
 
 from kivy.app import App
 from kivy.clock import Clock, mainthread
