@@ -70,6 +70,9 @@ class MadmomSpectrogramProvider:
 
         spec_bgr = cv2.flip(spec_bgr, 0)
 
+        cv2.imshow('AudioTagger', spec_bgr)
+        cv2.waitKey(1)
+
         # _, jpegImage = cv2.imencode('.jpg', spec_bgr)
         # jpegImage = jpegImage.tobytes()
         # self.spectrogramQueue.append(jpegImage)
