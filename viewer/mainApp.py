@@ -86,11 +86,11 @@ class MainApp(App, IViewer):
         self.window.predictorProperty = self.predictor
 
     def loadPredictors(self):
-        response = urlopen.urlopen("http://127.0.0.1:5000/pred_list")
+        response = urlopen("http://127.0.0.1:5000/pred_list")
         return json.loads(response.read())
 
     def loadSources(self):
-        response = urlopen.urlopen("http://127.0.0.1:5000/source_list")
+        response = urlopen("http://127.0.0.1:5000/source_list")
         return json.loads(response.read())
 
     def setIsLive(self, value):
@@ -106,7 +106,7 @@ class MainApp(App, IViewer):
         self.notifyBackendAboutSettingsChanged()
 
     def getCurrentSpectrogram(self, dt):
-        response = urllib2.urlopen("http://127.0.0.1:5000/live_spec")
+        response = urlopen("http://127.0.0.1:5000/live_spec")
         image = np.fromstring(response.read(), np.uint8)
         image = cv2.imdecode(image, cv2.IMREAD_COLOR)
         # cv2.imshow("AudioTagger", image)
@@ -118,7 +118,7 @@ class MainApp(App, IViewer):
         self.window.update_Spectrogram_Image(image)
 
     def getCurrentPrediction(self, dt):
-        response = urllib2.urlopen("http://127.0.0.1:5000/live_pred")
+        response = urlopen("http://127.0.0.1:5000/live_pred")
         prob_dict = json.loads(response.read())
         if len(prob_dict) > 5:  # show the 5 most probable classes
             sorted_dict = sorted(prob_dict, key=lambda i: i['prob'], reverse=True)
