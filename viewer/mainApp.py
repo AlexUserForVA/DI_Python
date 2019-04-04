@@ -86,11 +86,11 @@ class MainApp(App, IViewer):
         self.window.predictorProperty = self.predictor
 
     def loadPredictors(self):
-        response = urllib2.urlopen("http://127.0.0.1:5000/pred_list")
+        response = urlopen.urlopen("http://127.0.0.1:5000/pred_list")
         return json.loads(response.read())
 
     def loadSources(self):
-        response = urllib2.urlopen("http://127.0.0.1:5000/source_list")
+        response = urlopen.urlopen("http://127.0.0.1:5000/source_list")
         return json.loads(response.read())
 
     def setIsLive(self, value):
